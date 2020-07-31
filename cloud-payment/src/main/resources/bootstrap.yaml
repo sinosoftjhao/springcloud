@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: cloud-payment
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.43.159:8848,192.168.43.157:8849,192.168.43.159:8850
+        file-extension: yaml
+#        namespace: 0b1c2f63-7169-4e31-8916-b97a4b2a3d2c
+#        group: TEST_GROUP
+      discovery:
+        server-addr: 192.168.43.159:8848,192.168.43.157:8849,192.168.43.159:8850
+#        namespace: 0b1c2f63-7169-4e31-8916-b97a4b2a3d2c
+server:
+  port: 9876
